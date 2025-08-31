@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block content %}
+<h3>Available Travel Options</h3>
+<form class="row g-2 mb-3">
+  <div class="col-md-2">
+    <select class="form-select" name="type">
+      <option value="">Any Type</option>
+      {% for t in 'Flight,Train,Bus'.split(',') %}
+      <option value="{{t}}" {% if filters.type == t %}selected{% endif %}>{{t}}</option>
+      {% endfor %}
+    </select>
+  </div>
+  <div class="col-md-3"><input class="form-control" name="source" placeholder="Source" value="{{filters.source}}"></div>
+  <div class="col-md-3"><input class="form-control" name="destination" placeholder="Destination" value="{{filters.destination}}"></div>
+  <div class="col-md-2"><input class="form-control" type="date" name="date" value="{{filters.date}}"></div>
+  <div class="col-md-2"><button class="btn btn-secondary w-100">Filter</button></div>
+</form>
+<table class="table table-striped">
+<thead><tr><th>Type</th><th>Route</th><th>Date & Time</th><th>Price</</th><th>Seats</th><th></th></tr></thead>
+<tbody>
+{% for o in options %}
+<tr>
+<td>{{ o.type }}</td><td>{{ o.source }} → {{ o.destination }}</td>
+<td>{{ o.date_time|date:"Y-m-d H:i" }}</td><td>{{ o.price }}</td>
+<td>{{ o.available_seats }}</td>
+<td>{% if user.is_authenticated %}<a class="btn btn-sm btn-primary" href="{% url 'book_travel' o.id %}">Book</a>{% else %}<a class="btn btn-sm btn-outline-primary" href="{% url 'login' %}">Login to book</a>{% endif %}</td>
+</tr>
+{% empty %}<tr><td colspan="6" class="text-center">No options found.</td></tr>{% endfor %}
+</tbody></table>
+{% endblock %}
