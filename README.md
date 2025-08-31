@@ -5,6 +5,8 @@ This project is a full-stack web application that allows users to explore availa
 /backend    → Django backend (APIs, authentication, database models, booking logic)
 /frontend   → React frontend (UI, components, routing, styling)
 
+frontend:
+<img width="1908" height="637" alt="image" src="https://github.com/user-attachments/assets/5cd4c064-9981-47e0-a697-6e4dea1ae7dc" />
 
 
 
