@@ -13,11 +13,13 @@ frontend:
 
 ---
 backend:
-<img width="1907" height="887" alt="image" src="https://github.com/user-attachments/assets/2187206b-a5e7-44a1-a32e-d353036d4eac" />
-
+<img width="1907" height="887" alt="image" src="https://github.com/user-attachments/assets/2187206b-a5e7-44a1-a32e-d353036d4eac" />    
 
 
 Backend: Provides REST APIs for user management, travel listings, and bookings.
+
+<img width="1908" height="890" alt="image" src="https://github.com/user-attachments/assets/18ee39f0-8c88-450c-8a78-f3382baf47dd" />
+
 
 Frontend: Consumes the backend APIs to display data and provide a seamless user experience.
 
