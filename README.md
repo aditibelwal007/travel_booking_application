@@ -1,8 +1,11 @@
 # Travel Booking (Django)
+This project is a full-stack web application that allows users to explore available travel options, book tickets, and manage their bookings. It consists of a Django backend for handling authentication, database, and API logic, and a React frontend for an interactive and responsive user interface.
 
 ##  Project Structure
 /backend    → Django backend (APIs, authentication, database models, booking logic)
 /frontend   → React frontend (UI, components, routing, styling)
+
+
 
 
 Backend: Provides REST APIs for user management, travel listings, and bookings.
