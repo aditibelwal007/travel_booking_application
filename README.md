@@ -8,9 +8,12 @@ This project is a full-stack web application that allows users to explore availa
 frontend:
 <img width="1908" height="637" alt="image" src="https://github.com/user-attachments/assets/5cd4c064-9981-47e0-a697-6e4dea1ae7dc" />
 
----
+
 <img width="1893" height="897" alt="image" src="https://github.com/user-attachments/assets/b0d90fe9-18a2-4349-ab37-23b4d28b545d" />
 
+---
+backend:
+<img width="1907" height="887" alt="image" src="https://github.com/user-attachments/assets/2187206b-a5e7-44a1-a32e-d353036d4eac" />
 
 
 
